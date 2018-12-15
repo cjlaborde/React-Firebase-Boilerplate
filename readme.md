@@ -10,6 +10,18 @@ git commit - Creates a new commit with files from staging area
 
 git log - View recent commits
 
+## Add File to Github
+
+git remote add origin git@github.com:cjlaborde/React-Firebase-Boilerplate.git
+
+git push -u origin master
+
+after you can just use git push only
+
+## Clean Git with
+
+rm -rf .git
+
 ## Find SSH KEYS
 
 ls -a ~/.ssh
@@ -18,13 +30,13 @@ https://help.github.com/articles/connecting-to-github-with-ssh/
 
 ## Check is ssh-agent running
 
- eval "$(ssh-agent -s)"
+eval "\$(ssh-agent -s)"
 
 ## Add Key
 
- ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsa
 
-## Basic connection to github services 
+## Basic connection to github services
 
 ssh -T git@github.com
 
@@ -39,7 +51,7 @@ git remote -v
 ## push to git
 
 -u create assosiation between our local and github repository you only need to use it once
-then type remote name =origin  and branch = master
+then type remote name =origin and branch = master
 git push -u orgin master
 
 git push --set-upstream origin master
@@ -49,9 +61,8 @@ git push --set-upstream origin master
 git commit -a -m "message here"
 git commit -am "Setp devDependencies and fist folder"
 
-## WebPack Production 
+## WebPack Production
 
-  "scripts": {
-    "build": "webpack",
-yarn run build 
-
+"scripts": {
+"build": "webpack",
+yarn run build
